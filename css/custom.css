@@ -1,0 +1,111 @@
+/* ________________________________ */
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+
+
+
+
+/* ___________________________ */
+.slide-image {
+    /* background: linear-gradient(to bottom, #035668, #000000, #035668); */
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.swiper-pagination {
+    position: static;
+    margin-top: 90px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff !important;
+}
+
+/* ---- stats.js ---- */
+
+
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-secondary {
+    --bs-text-opacity: 1;
+    color: #E21E80 !important;
+}
+
+.feature {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.5rem;
+}
+
+.bg-gradient-primary-to-secondary {
+    background: #1e30f3;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.container span {
+    line-height: 1.2;
+    font-size: calc(1.3rem + 0.6vw);
+
+}
+
+.bg-gradient-2 {
+    background: linear-gradient(to bottom, #000000, #035668);
+
+}
+
+.bg-gradient-1 {
+    background: linear-gradient(to bottom, #035668, #000000);
+
+}
+
+/*  */

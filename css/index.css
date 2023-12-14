@@ -5,6 +5,7 @@
   position: relative;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 /* button onmouse down */
@@ -110,25 +111,24 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    text-align: justify;
+    width: 100%;
+  }
   #navbarText ul li a:hover {
     background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
   }
-
-  /* #navbarText ul li a::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.5);
-        transform: skewX(45deg) translateX(160px);
-        transition: 0.1s;
-    }
-
-    #navbarText ul li a:hover::before {
-        transform: skewX(45deg) translateX(-160px);
-    } */
+  #about {
+    /* background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .information {
+    width: 100%;
+  }
 }
 
 @keyframes pulse {
@@ -144,7 +144,10 @@ body {
     transform: scale(0.9);
   }
 }
-
+ul {
+  /* text justify */
+  text-align: justify;
+}
 #heroes {
   position: relative;
   top: 0;
@@ -154,28 +157,27 @@ body {
   padding: 0;
   margin: 0;
   z-index: 1;
-  background: linear-gradient(to bottom,  rgb(163, 222, 222),#ffffff);
+  background: linear-gradient(to bottom, rgb(163, 222, 222), #ffffff);
 }
 
-#heroes .text {
-  position: absolute;
+.about .text {
   color: black;
-  left: 50%;
-  top: 70%;
+
   text-transform: uppercase;
-  transform: translate(-50%);
+
   text-align: center;
-  width: 80%;
 }
 
-#heroes .text h1 {
+.about .text h1 {
   /* width: 100%; */
   font-size: 18px;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
     0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   animation: shine 1s ease-in-out infinite;
 }
-
+.btn {
+  animation: shine 0.2s ease-in-out infinite;
+}
 @keyframes shine {
   0% {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de,
@@ -195,8 +197,7 @@ body {
 }
 
 /* ++++++++++++++++++++++++++ */
-#about{
-    padding-top: 0!important;
+#about {
 }
 .about {
   width: 100%;
@@ -208,7 +209,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* padding: 100px 0; */
 }
 
 .about img {
@@ -224,7 +224,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  padding-left: 100px;
+  /* padding-left: 100px; */
+  padding: 15px;
 }
 
 .information p {
@@ -233,11 +234,11 @@ body {
   /* font-size: 18px; */
   line-height: 1.5;
 }
-.information span{
-    /* ?linethrough */
-    font-size: 16px;
+.information span {
+  /* ?linethrough */
+  font-size: 16px;
 
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 #text::first-letter {
