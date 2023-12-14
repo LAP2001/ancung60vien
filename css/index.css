@@ -110,27 +110,6 @@ body {
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    text-align: justify;
-    width: 100%;
-  }
-  #navbarText ul li a:hover {
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-  }
-  #about {
-    /* background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .information {
-    width: 100%;
-  }
-}
-
 @keyframes pulse {
   0% {
     transform: scale(0.9);
@@ -197,16 +176,14 @@ ul {
 }
 
 /* ++++++++++++++++++++++++++ */
-#about {
-}
+
 .about {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom, #ffffff, rgb(163, 222, 222), #f2a5a5);
-  /* background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); */
   color: #000000;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -277,7 +254,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
+  padding: 10px;
   font-size: 14px;
   font-family: 'Comfortaa';
   height: 100px;
@@ -300,54 +277,12 @@ footer {
   margin: 0 10px;
 }
 
-/* _______________________p */
-/* #about,
-#art,
-#resume,
-#projects,
-#contact {
-    display: none;
-}
-
-
-#about.show {
-    display: flex;
-} */
-
-/* #art.show,
-#heroes.show,
-#resume.show,
-#projects.show,
-#contact.show {
-    display: block;
-} */
-
-/* .hidden {
-    display: none;
-} */
-
-.navbar-nav {
-  font-size: 1rem;
-  /* default font size */
-}
-
-#contact {
-  /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-}
-
 #contact .card {
   width: 65vw;
-  /* display: flex; */
-  /* align-items: center; */
-  /* margin: auto; */
 }
 
 #contact .card ul {
   list-style-type: none;
-
   font-size: 0.5rem;
   line-height: 1.5;
   color: white;
@@ -365,54 +300,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .navbar-nav {
-    font-size: 0.875rem;
-    /* font size for small screens */
-  }
-
-  .navbar-brand {
-    font-size: 1rem;
-  }
-
-  .navbar-toggler {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1;
-    border: 1px solid white !important;
-    border-radius: 0.2rem;
-  }
-
-  #navbarText {
-    margin: 0;
-  }
-
-  .nav-item {
-    border: 1px solid #ffffff;
-    margin: 0;
-    border-radius: 2px;
-  }
-
-  .nav-link {
-    border: none;
-    border-radius: unset;
-  }
-
-  .nav-link i {
-    border: none;
-    border-radius: unset;
-    display: inline-block;
-    padding-left: 10px;
-  }
-
-  #heroes .text {
-    font-size: 1.5rem;
-    transform: translate(-50%, -50%);
-  }
-
-  #heroes h1 {
-    font-size: 2.5rem;
-  }
-
   /* ++++++++++++++++++++++++++++++++++ */
   .about {
     flex-direction: column;
