@@ -34,6 +34,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- normalize cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/custom.css">
     <script src="./scripts/index.js" defer></script>
@@ -42,7 +44,7 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"
-        class="btn btn-primary bg-success text-center border-light border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-circle mb-1"
+        class="btn btn-secondary bg-success text-center border-light border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-circle mb-1"
         type="button" style="  
        height: 60px; position: fixed; bottom: 20px; right: 30px;
          display: none; z-index: 99;
@@ -56,7 +58,7 @@
                 </h2>
 
                 <button
-                    class="btn btn-secondary text-danger bg-light border-light btn-lg px-0 me-sm-1 fw-bold text-uppercase rounded-pill"
+                    class="btn btn-secondary text-danger bg-light border-light btn-lg px-0 me-sm-1 fw-bold text-uppercase rounded-1"
                     type="button" style="font-size: 16px; width: 150px;"
                     onclick="window.open('https://www.messenger.com/t/101095679622979')">
                     Mua ngay <i class="fas fa-shopping-cart"></i>
@@ -72,29 +74,10 @@
             <h1 class='text-white fs-6'>Hộp gỗ 60 viên Hàn Quốc</h1>
             <h1 class='text-white fs-6'>SAMSUNG Gum Jee Hwan</h1>
         </div>
-        <div class="slider-container">
-            <div class="slider">
-                <img loading="lazy" src="./an cung/anh1.jpg" alt="Image 1">
-                <img loading="lazy" src="./an cung/anh2.jpg" alt="Image 2">
-                <img loading="lazy" src="./an cung/anh3.jpg" alt="Image 3">
-                <img loading="lazy" src="./an cung/anh4.jpg" alt="Image 4">
-                <img loading="lazy" src="./an cung/anh9.jpg" alt="Image 5">
-                <img loading="lazy" src="./an cung/anh6.jpg" alt="Image 6">
-                <img loading="lazy" src="./an cung/anh7.jpg" alt="Image 7">
-                <img loading="lazy" src="./an cung/anh8.jpg" alt="Image 8">
 
-                <!-- Add more images here -->
-            </div>
-            <button class="slider-prev">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="slider-next">
-                <i class="fas fa-chevron-right"></i>
-            </button>
-        </div>
-        <!-- <div class="profile bg-black bg-opacity-50 ">
+        <div class="profile bg-black bg-opacity-50 ">
             <img loading="lazy" src="./an cung/anh1.jpg" alt="">
-        </div> -->
+        </div>
         <div class="information">
             <div class="text-center ">
                 <!-- <h1 class="display-5 fw-bolder mb-0"> -->
@@ -133,7 +116,7 @@
                         <button
                             class="btn btn-primary bg-success border-light border-2 btn-sm px-4 me-sm-3 fw-LIGHT text-uppercase rounded-pill mb-1"
                             type="button" style=" width: 70vw; ">
-                            <span class="text-white font-monospace">NHẤN ĐỂ Kiểm tra hàng giả <i
+                            <span class="text-white font-monospace">nhấn để kiểm tra hàng giả <i
                                     class="fas fa-check-circle"></i>
                             </span>
                         </button>
@@ -163,7 +146,7 @@
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                             allowFullScreen="true"></iframe> -->
-                        <h1 class="text-primary  fw-bolder mt-2 mb-0">Công dụng</h1>
+                        <h1 class="text-primary text-uppercase fw-bolder mt-2 mb-0">Công dụng</h1>
                     </div>
                     <!-- Experience Card 1-->
                     <div class="card shadow border-0 rounded-4 mb-5">
@@ -177,12 +160,19 @@
                                                 ✔ Hỗ trợ hoạt huyết, hỗ trợ phòng chống cho người rối lọan tiền đình,
                                                 đau
                                                 đầu, thiếu máu não, tắc động mạch vành và phụ nữ mãn kinh.
+
                                             </li>
+                                            <div class="profile bg-black bg-opacity-50 ">
+                                                <img loading="lazy" src="./an cung/anh9.jpg" alt="">
+                                            </div>
                                             <li>
                                                 ✔ Sản phẩm đặc biệt tốt cho người bị suy nhược thần kinh do áp lực công
                                                 việc, lao động trí óc ở cường độ cao và đối mặt với những biến cố trong
                                                 cuộc sống.
                                             </li>
+                                            <div class="profile bg-black bg-opacity-50 ">
+                                                <img loading="lazy" src="./an cung/anh8.jpg" alt="">
+                                            </div>
                                             <li>
                                                 ✔ Có tác dụng rất tốt trong việc hỗ trợ ngăn ngừa hiện tượng chảy máu
                                                 não, xuất
@@ -195,6 +185,9 @@
                                                 và rối loạn chức năng diễn đạt ngôn ngữ.
 
                                             </li>
+                                            <div class="profile bg-black bg-opacity-50 ">
+                                                <img loading="lazy" src="./an cung/anh2.jpg" alt="">
+                                            </div>
                                             <li>
                                                 ✔ Hỗ trợ chữa trị chứng đột quỵ (chứng xuất huyết não, liệt toàn thân,
                                                 liệt tay
@@ -205,6 +198,9 @@
                                                 và mãn tính, rối loạn thần kinh thực và bất tỉnh nhân sự...
 
                                             </li>
+                                            <div class="profile bg-black bg-opacity-50 ">
+                                                <img loading="lazy" src="./an cung/anh7.jpg" alt="">
+                                            </div>
                                             <li>
                                                 ✔ Hỗ trợ phòng chống các bệnh về cao huyết áp và tai biến mạch máu não,
                                                 tim đập
@@ -214,7 +210,9 @@
                                                 ngực khó
                                                 thở nhức đầu hoa mắt đi lại nói năng khó khăn, đầu óc không tỉnh táo.
                                             </li>
-
+                                            <div class="profile bg-black bg-opacity-50 ">
+                                                <img loading="lazy" src="./an cung/anh4.jpg" alt="">
+                                            </div>
 
                                         </ul>
 
@@ -229,14 +227,15 @@
                 </section>
                 <!-- Education Section-->
                 <section>
-                    <h2 class="text-primary text-center fw-bolder mb-4">Chống chỉ định</h2>
+                    <h2 class="text-primary text-center fw-bolder text-uppercase mb-4">Chống chỉ định</h2>
                     <!-- Education Card 1-->
                     <div class="card shadow border-0 rounded-4 mb-5">
                         <div class="card-body p-xl-1 p-sm-0">
                             <div class="row align-items-center gx-5">
                                 <div class="col col-1 w-100 text-center mb-4 mb-lg-0">
                                     <div class="bg-light p-1 rounded-4">
-                                        <div class="text-secondary fw-bolder mb-2">❌5 đối tượng dưới đây tuyệt đối không
+                                        <div class="text-secondary text-uppercase fw-bolder mb-2">❌5 đối tượng dưới đây
+                                            tuyệt đối không
                                             được sử dụng:</div>
 
                                     </div>
@@ -315,13 +314,10 @@
                     </li>
 
                     <li class="list-group-item bg-gradient-primary-to-secondary text-white">
-                        <a href="mailto:lapnv.work@gmail.com">EMAIL:
+                        <a href="mailto:lapnv.work@gmail.com">Email:
                             lapvp01@gmail.com</a>
                     </li>
-                    <li class="list-group-item bg-gradient-primary-to-secondary text-white">
-                        <!-- <a href="https://www.facebook.com/nvlap.ziip/">Facebook: LAP NGUYEN</a> -->
 
-                    </li>
 
                 </ul>
                 <div class="card-body">

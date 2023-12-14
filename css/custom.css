@@ -80,8 +80,9 @@ canvas {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: #1e30f3;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  background: #1fb6d8;
+  /* background: linear-gradient(135deg, #18a5dd 0%, #e21e80 100%); */
+  background: linear-gradient(135deg, #1ecbe2 0%, #035668 100%);
 }
 
 .container span {
@@ -98,39 +99,3 @@ canvas {
 }
 
 /*  */
-.slider-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.3s ease-in-out;
-}
-
-.slider img {
-  width: 100%;
-  height: auto;
-}
-
-.slider-prev,
-.slider-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: WHITE;
-  border: 2px solid #eeeeee;
-  border-radius: 50%;
-  color: #035668;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.slider-prev {
-  left: 5px;
-}
-
-.slider-next {
-  right: 5px;
-}

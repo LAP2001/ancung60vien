@@ -26,32 +26,5 @@ function scrollFunction() {
     }
 }
 
-const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.slider-prev');
-const nextButton = document.querySelector('.slider-next');
-const imageWidth = slider.getBoundingClientRect().width;
 
-let currentPosition = 0;
-
-prevButton.addEventListener('click', () => {
-    currentPosition += imageWidth;
-    if (currentPosition >= 0) {
-
-        currentPosition = -(imageWidth * (slider.children.length - 1));
-    }
-    if (currentPosition === 0) {
-        prevButton.style.display = 'none';
-    } else {
-        prevButton.style.display = 'block';
-    }
-    slider.style.transform = `translateX(${currentPosition}px)`;
-});
-
-nextButton.addEventListener('click', () => {
-    currentPosition -= imageWidth;
-    if (currentPosition <= -(imageWidth * (slider.children.length - 1))) {
-        currentPosition = 0;
-    }
-    slider.style.transform = `translateX(${currentPosition}px)`;
-    prevButton.style.display = 'block';
-});
+// 
