@@ -12,6 +12,7 @@
 
 body {
   /* background-color: #F6648C; */
+  overflow-x: hidden;
 }
 
 .container-fluid {
@@ -154,7 +155,7 @@ ul {
     0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
   animation: shine 1s ease-in-out infinite;
 }
-.btn {
+.btn .muangay {
   animation: shine 0.2s ease-in-out infinite;
 }
 @keyframes shine {

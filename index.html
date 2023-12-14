@@ -36,11 +36,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/custom.css">
-
+    <script src="./scripts/index.js" defer></script>
 </head>
 <!-- landing page - portfolio -->
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"
+        class="btn btn-primary bg-success text-center border-light border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-circle mb-1"
+        type="button" style="  
+       height: 60px; position: fixed; bottom: 20px; right: 30px;
+         display: none; z-index: 99;
+         
+         "><i class="fas fa-arrow-up"></i></button>
     <!-- header -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
@@ -49,7 +56,7 @@
                 </h2>
 
                 <button
-                    class="btn btn-primary bg-success border-light btn-lg px-0 me-sm-1 fw-bold text-uppercase rounded-pill"
+                    class="btn btn-secondary text-danger bg-light border-light btn-lg px-0 me-sm-1 fw-bold text-uppercase rounded-pill"
                     type="button" style="font-size: 16px; width: 150px;"
                     onclick="window.open('https://www.messenger.com/t/101095679622979')">
                     Mua ngay <i class="fas fa-shopping-cart"></i>
@@ -76,7 +83,7 @@
                 <h5 class="text-white fs-2">759.000 VNĐ</h5>
                 <!-- </h1> -->
                 <button
-                    class="btn btn-primary bg-success border-light border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-pill mb-1"
+                    class="btn muangay  btn-primary text-white bg-gradient-primary-to-secondary border-white border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-pill mb-1"
                     type="button" style=" font-size: 20px; width: 200px;"
                     onclick="window.open('https://www.messenger.com/t/101095679622979')">
                     Mua ngay <i class="fas fa-shopping-cart"></i>
@@ -104,11 +111,11 @@
                 <div class="text-center ">
                     <a href="https://www.sspharm.co.kr/new/eng/sub_veri/verification.php" target="_self">
                         <button
-                            class="btn btn-primary bg-success border-light border-2 btn-lg px-4 me-sm-3 fw-bold text-uppercase rounded-pill mb-1"
-                            type="button" style=" font-size: 16px; ">
-                            <span class="text-white d-inline">Kiểm tra hàng giả
-                                tại
-                                đây</span> <i class="fas fa-check-circle"></i>
+                            class="btn btn-primary bg-success border-light border-2 btn-sm px-4 me-sm-3 fw-LIGHT text-uppercase rounded-pill mb-1"
+                            type="button" style=" width: 70vw; ">
+                            <span class="text-white font-monospace">NHẤN ĐỂ Kiểm tra hàng giả <i
+                                    class="fas fa-check-circle"></i>
+                            </span>
                         </button>
                     </a>
 
@@ -124,18 +131,18 @@
             <div class="col-lg-11 col-xl-9 col-xxl-8 p-sm-0">
                 <iframe
                     src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fancung.hopgo.60vien.samsung%2Fposts%2Fpfbid02ibinfQqM7EnwsFrjaNJhCr7Aszr8KhxMjti5CovqGukB39eUFQZN5JrAEuCF9PgHl&show_text=true&width=500"
-                    width="100%" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    width="100%" height="650" style="border:none;overflow:hidden" scrolling="no" frameborder="1"
                     allowfullscreen="true"
                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
                 <section>
                     <div class=" text-center justify-content-between mb-0">
-                        <iframe
+                        <!-- <iframe
                             src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1061985564991216%2F&show_text=false&width=267&t=0"
                             width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
                             allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                            allowFullScreen="true"></iframe>
+                            allowFullScreen="true"></iframe> -->
                         <h1 class="text-primary  fw-bolder mt-2 mb-0">Công dụng</h1>
                     </div>
                     <!-- Experience Card 1-->
@@ -306,7 +313,7 @@
 
                         </a>
                         <!-- call= -->
-                        <a href="https://zalo.me/0789702948">
+                        <a href="tel:+84789702948">
                             <i class="fas fa-phone-square"></i>
 
                         </a>
@@ -318,6 +325,7 @@
                     </div>
                 </div>
             </div>
+
     </section>
 
 
@@ -328,6 +336,16 @@
             © 2023 _nvlap.zip
         </div>
     </footer>
+
+    <!-- to top button -->
+
+    <script>
+
+    </script>
+
+
+
+
 
 </body>
 
