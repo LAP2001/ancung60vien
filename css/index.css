@@ -9,10 +9,14 @@
 }
 
 /* button onmouse down */
-
+header {
+  max-width: 1094px;
+}
 body {
   /* background-color: #F6648C; */
   overflow-x: hidden;
+  max-width: 1094px;
+  margin: 0 auto;
 }
 
 .container-fluid {
@@ -27,6 +31,8 @@ body {
   top: 0;
   z-index: 100;
   width: 100%;
+  max-width: 1094px;
+
   /* color: transparent; */
   /* height: auto; */
 }
@@ -153,6 +159,12 @@ ul {
   animation: shine 0.9s ease-in-out infinite;
   z-index: 99;
 }
+.profile img {
+  max-width: 600px;
+  height: auto;
+  max-height: 700px;
+  align-self: center;
+}
 @keyframes shine {
   0% {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00de,
@@ -226,8 +238,8 @@ ul {
   width: 80vw;
   /* border-radius: 100% 100% 10px 10px; */
   border: 2px solid #ffffff;
-  /* min-height: 3rem; */
-  /* max-width: 30rem; */
+  max-width: 30rem;
+  max-height: 30rem;
 }
 
 .profile img {
